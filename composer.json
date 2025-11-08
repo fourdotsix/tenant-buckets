@@ -7,12 +7,12 @@
         "Tenancy For Laravel",
         "tenancyforlaravel"
     ],
-    "homepage": "https://github.com/vidwan-co/tenant-buckets",
+    "homepage": "https://github.com/fourdotsix/tenant-buckets",
     "license": "MIT",
     "authors": [
         {
-            "name": "Shashwat Mishra",
-            "email": "shashwat@vidwan.co",
+            "name": "Hash",
+            "email": "11258035+secrethash@users.noreply.github.com",
             "role": "Developer"
         }
     ],

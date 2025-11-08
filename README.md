@@ -1,10 +1,12 @@
-# Provision S3 Buckets for each tenant.
-![Vidwan/Tenant-Buckets](https://banners.beyondco.de/Tenant%20Buckets.png?theme=dark&packageManager=composer+require&packageName=vidwan%2Ftenant-buckets&pattern=circuitBoard&style=style_1&description=Provision+S3+Buckets+for+tenants.&md=1&showWatermark=0&fontSize=100px&images=collection)
+<p align="center"><a href="https://fourdotsix.com" target="_blank"><img src="https://cdn.fourdotsix.com/images/4.6/logo/4.6-bimi.svg" width="200" alt="fourdotsix.com Logo"></a><br><strong>four●six</strong> // tenant-buckets</p>
+
+# Provision S3 Buckets for each tenant
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/vidwan/tenant-buckets.svg?style=flat-square)](https://packagist.org/packages/vidwan/tenant-buckets)
 [![Tests](https://github.com/vidwanco/tenant-buckets/actions/workflows/run-tests.yml/badge.svg?branch=main)](https://github.com/vidwanco/tenant-buckets/actions/workflows/run-tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/vidwan/tenant-buckets.svg?style=flat-square)](https://packagist.org/packages/vidwan/tenant-buckets)
 
-Automatically Provision AWS S3 Buckets for each tenant. It's an Extention for [stancl/tenancy](https://github.com/stancl/tenancy). For more details refer to [TenancyForLaravel](https://tenancyforlaravel.com/).
+Automatically Provision AWS S3 Buckets for each tenant. It's an Extension for [stancl/tenancy](https://github.com/stancl/tenancy). For more details refer to [TenancyForLaravel](https://tenancyforlaravel.com/).
 
 ## Tenancy V4.x
 
@@ -24,17 +26,8 @@ composer require vidwan/tenant-buckets:^4.0.0-rc
 
 ## Concept
 
-The concept is simple, to automatically provison a new AWS S3 bucket for tenant on registration and update the same on the central database's tenant table & data coloumn under `tenant_bucket`.
+The concept is simple, to automatically provision a new AWS S3 bucket for tenant on registration and update the same on the central database's tenant table & data column under `tenant_bucket`.
 Then using a bootstrapper updating the bucket in config `filesystems.disks.s3.bucket` during runtime when in Tenant's context and then reverting it back on central context.
-
-### Roadmap
-
-- [x] Automatic Bucket Creation
-- [x] Selecting the created bucket during Tenancy Bootstrapping.
-- [x] Deletion of Bucket when the Tenant is deleted.
-- [ ] Testing with Amazon S3 service.
-
-> **Note:** I have still not tested this package under ***production*** environment or with a real AWS S3 Bucket. I have only tested it under ***development*** environment using [MinIO](https://min.io/). I will update this after testing it on AWS S3 Bucket with an additional section on AWS IAM Policy Setup for creating the buckets using `aws-sdk-php`. Untill then, if you have tested, a PR is welcome.
 
 ## Installation
 
@@ -171,3 +164,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+## <br><br>
+
+<p align="center">From the folks at <a href="https://fourdotsix.com" target="_blank">Four Dot Six (4.6)</a></p>
